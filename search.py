@@ -20,7 +20,7 @@ def searchApi(query):
     },
     "query":query
     }
-    res = requests.post("https://music.youtube.com/youtubei/v1/search?key=AIzaSyC9XL3ZjWddXya6X74dJoCTL-WEYFDNX30",headers=headers,json=payload)
+    res = requests.post("https://music.youtube.com/youtubei/v1/search?key=gadaghjadgdajdgajdgadvadavdajdavdda",headers=headers,json=payload)
     js=json.loads(res.content)
     main=js['contents']['tabbedSearchResultsRenderer']['tabs'][0]['tabRenderer']['content']['sectionListRenderer']['contents']
     for x in main:
